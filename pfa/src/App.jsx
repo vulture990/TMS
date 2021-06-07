@@ -1,4 +1,4 @@
-import React from "react";
+import React ,{useState} from "react";
 import "./App.scss";
 import { Login, Register } from "./components/login/index";
 
@@ -54,6 +54,7 @@ class App extends React.Component {
     );
   }
 }
+
 
 const RightSide = props => {
   return (

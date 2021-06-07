@@ -1,11 +1,13 @@
-import React from "react";
+import React,{useState} from "react";
 import loginImg from "../../login.svg";
+
+
 
 export class Register extends React.Component {
   constructor(props) {
     super(props);
   }
-
+  
   render() {
     return (
       <div className="base-container" ref={this.props.containerRef}>
@@ -16,8 +18,15 @@ export class Register extends React.Component {
           </div>
           <div className="form">
             <div className="form-group">
-              <label htmlFor="username">Status</label>
-              <input type="text" name="status" placeholder="status" />
+              <label htmlFor="status">Status</label>
+                <select name="status" >
+                    <option value="Eleve">Eleve</option>
+                    <option value="Chef d'etablissement">Chef d'etablissement</option>
+                    <option value="Rapporteur">Rapporteur</option>
+                    <option value="Jury">Jury</option>
+                </select>
+
+              
             </div>
             <div className="form-group">
               <label htmlFor="email">Email</label>

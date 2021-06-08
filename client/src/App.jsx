@@ -1,7 +1,7 @@
 import React ,{useState} from "react";
 import "./App.scss";
-import {Login} from "./components/login/index";
-import  {register} from "./components/login/register"
+import { Login, Register } from "./components/login/index";
+
 
 class App extends React.Component {
   constructor(props) {
